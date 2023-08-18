@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="estilos/mobile.css">
     <link rel="stylesheet" href="estilos/general.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header class="header">
         <a href="#" class="logo">Logo</a>
-        <span id="burguer" class="material-symbols-outlined">menu</span>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="#">Sobre</a>
             <a href="#">Portifólio</a>
             <a href="#">Contato</a>
+        </nav>
+        <nav id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portifólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -41,5 +49,23 @@
 
         </div>
     </footer>
+    <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
