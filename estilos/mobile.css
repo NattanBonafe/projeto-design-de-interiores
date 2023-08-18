@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap');
 
 /* Versão Mobile First */
-
+/* Inicio cabecalho */
 *{
     margin: 0px;
     padding: 0px;
@@ -21,7 +21,7 @@ header{
     left: 0;
     width: 100vw;
     padding: 20px 40px;
-    background-color: transparent;
+    background-color: #171719f1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,4 +62,54 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* Fim cabecalho */
+/* Inicio corpo */
+main{
+    margin: 100px auto 20px auto;
+    width: 100vw;
+    max-width: 1200px;
+}
+section#s-um-img{
+    position: relative;
+    /* width: 90%; */
+    margin: 0px 0px 0px 20px;
+    background:  url('../imagens/quarto-amplo-p.jpg') no-repeat;
+    background-size: contain;
+    background-position: center right;
+    height: 250px;
+}
+div#sobre-img{
+    position: relative;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div#social{
+    margin: auto 20px auto 0px;
+}
+i{
+    color: #a76b37;
+    padding-top: 15px;
+}
+i:hover{
+    color: #fff;
+}
+h2{
+    font-size: 1.5rem;
+    width: 300px;
+}
+p#sm{
+    margin: 0;
+}
+a.dm{
+    color: #a76b37;
+    text-decoration: underline;
+}
+a.dm:hover{
+    color: #fff;
+}
+
+p{
+    margin-top: 50px;
 }

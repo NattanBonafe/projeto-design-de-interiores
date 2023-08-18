@@ -5,6 +5,8 @@
 @media screen and (min-width: 768px) {
     .header{
         padding: 20px 100px;
+        background-color: #1717199f;
+        backdrop-filter: blur(10px);
     }
     #burguer{
         display: none;
@@ -43,5 +45,20 @@
     .navbar a:hover::before{
         width: 100%;
     }
-
+/* Inicio corpo */
+}
+@media screen and (min-width: 700px) {
+    section#s-um-img{
+        position: relative;
+        /* width: 90%; */
+        margin: 0px 0px 0px 20px;
+        background:  url('../imagens/quarto-amplo-m.jpg') no-repeat;
+        background-size: contain;
+        background-position: center right;
+        height: 400px;
+    }
+    h2{
+        font-size: 1.8rem;
+        width: 350px;
+    }
 }

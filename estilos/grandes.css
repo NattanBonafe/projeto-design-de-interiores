@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* Telas grandes */
+
+@media screen and (min-width: 900px) {
+    section#s-um-img{
+        position: relative;
+        /* width: 90%; */
+        margin: 0px 0px 0px 20px;
+        background:  url('../imagens/quarto-amplo-gp.jpg') no-repeat;
+        background-size: contain;
+        background-position: center right;
+        height: 700px;
+    }
+}
