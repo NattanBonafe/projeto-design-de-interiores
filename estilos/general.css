@@ -8,6 +8,9 @@
         background-color: #1717199f;
         backdrop-filter: blur(10px);
     }
+    a.dm{
+        font-size: 16px;
+    }
     #burguer{
         display: none;
     }
@@ -60,5 +63,44 @@
     h2{
         font-size: 1.8rem;
         width: 350px;
+    }
+    #step-num{
+        width: 420px;
+        margin: 100px 0px;
+    }
+    .div-num > p.num{
+        font-size: 40px;
+        font-weight: bolder;
+        padding: 0;
+        margin: 0;
+    }
+    .div-num > h3{
+        margin: 0px;
+        padding-top: 10px;
+    }
+    .div-num > p.det-num{
+        font-size: 14px;
+        padding: 10px 0px 0px 0px;
+        margin: 0;
+    }
+
+    article#fst-art{
+        margin: 100px 20px;
+    }
+    div#fst-art-img{
+        float: left;
+        height: 400px;
+        width: 50%;
+        margin-right: 5%;
+    }
+    div#div-art-one{
+        max-width: 45%;
+        float: right;
+    }
+    article#fst-art p.txt-gnl{
+        font-size: 15px;
+    }
+    aside{
+        margin-top: 400px;
     }
 }

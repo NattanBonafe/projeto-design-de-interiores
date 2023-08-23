@@ -12,4 +12,24 @@
         background-position: center right;
         height: 700px;
     }
+    #step-num{
+        width: 690px;
+        margin: 100px 0px;
+        gap: 40px;
+    }
+    .div-num > p.num{
+        font-size: 45px;
+        font-weight: bolder;
+        padding: 0;
+        margin: 0;
+    }
+    .div-num > h3{
+        margin: 0px;
+        padding-top: 5px;
+    }
+    .div-num > p.det-num{
+        font-size: 14px;
+        padding: 5px 0px 0px 0px;
+        margin: 0;
+    }
 }

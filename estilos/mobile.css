@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap');
 
+
 /* Versão Mobile First */
 /* Inicio cabecalho */
 *{
@@ -103,6 +104,7 @@ p#sm{
     margin: 0;
 }
 a.dm{
+    font-size: 12px;
     color: #a76b37;
     text-decoration: underline;
 }
@@ -113,3 +115,64 @@ a.dm:hover{
 p{
     margin-top: 50px;
 }
+
+#step-num{
+    /* background-color: grey; */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,200px));
+    gap: 20px;
+    width: 180px;
+    /* max-width: 940px; */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px 0px;
+}
+
+.div-num{
+    display: grid;
+    width: 200px;
+}
+
+.div-num > p.num{
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    color: #a76b37;
+}
+.div-num > h3{
+    margin: 0px;
+    padding-top: 5px;
+}
+.div-num > p.det-num{
+    font-size: 12px;
+    padding: 5px 0px 0px 0px;
+    margin: 0;
+    color: #5c5c5c;
+}
+
+article#fst-art{
+    margin: 100px 20px;
+    padding: 10px;
+}
+div#fst-art-img{
+    background: url('../imagens/sofa-parede.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+article#fst-art p#topic{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #a76b37;
+    margin-top: 10px;
+}
+article#fst-art p.txt-gnl{
+    font-size: 13px;
+    color: #5c5c5c;
+    margin-top: 10px;
+}
+
