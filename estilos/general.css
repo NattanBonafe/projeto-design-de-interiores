@@ -100,7 +100,14 @@
     article#fst-art p.txt-gnl{
         font-size: 15px;
     }
-    aside{
+    #snd-art{
         margin-top: 400px;
+    }
+
+    .gallery__item{
+        transition: .2s;
+    }
+    #gallery__items:hover > :not(:hover){
+        opacity: .2;
     }
 }
