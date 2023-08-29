@@ -15,6 +15,7 @@
 }
 body{
     background-color: #171719;
+    overflow-x: hidden;
 }
 header{
     position: fixed;
@@ -170,7 +171,7 @@ p.topic{
     color: #a76b37;
     margin-top: 10px;
 }
-article#fst-art p.txt-gnl{
+p.txt-gnl{
     font-size: 13px;
     color: #5c5c5c;
     margin-top: 10px;
@@ -196,7 +197,7 @@ article#fst-art p.txt-gnl{
     scroll-snap-type: x mandatory;
     gap: 20px;
 }
-.gallery__item{
+.legenda{
     flex: none;
 
     width: 80%;
@@ -209,7 +210,61 @@ img{
     height: 100%;
     object-fit: cover;
 }
+.legenda{
+    position: relative;
+    overflow-y: hidden;
+}
+div.legenda > p{
+    position: absolute;
+    display: inline;
+    padding: 10px;
+    font-size: 13px;
+    color: #a76b37;
+    background-color: #171719;
+    text-align: center;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 100%);
+}
 
+/* BARRA DE ROLAGEM DO CARROSSEL */
+#gallery__items::-webkit-scrollbar{
+    height: 5px;
+}
+#gallery__items::-webkit-scrollbar-track-piece{
+    background-color: #444444;
+}
+#gallery__items::-webkit-scrollbar-thumb{
+    background-color: #a86326;
+}
+/* FIM DA BARRA DE ROLAGEM */
+
+section#fst-sct{
+    margin: 100px 20px 0 20px;
+    padding: 10px;
+}
+div#fst-sct-img{
+    background: url('../imagens/pessoa-aleatória.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+.testmony{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.ocupation{
+    font-size: 15px;
+    margin: 0;
+    color: #979797;
+}
+
+footer{
+    height: 200px;
+    background-color: #1b1b1b;
+}
 /* #gallery{
     align-items: center;
     width: 98%;
